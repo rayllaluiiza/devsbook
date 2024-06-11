@@ -1,0 +1,26 @@
+{
+    "name": "raylla/devsbook",
+    "description": "Criação de uma rede social",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Raylla Luiza da Silva Gama",
+            "email": "raylla_op12@hotmail.com",
+            "role": "Desenvolvedora"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        }
+    },
+    "require": {
+        "php": "8.2",
+        "ext-pdo": "8.2",
+        "coffeecode/router": "2.0.*",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
