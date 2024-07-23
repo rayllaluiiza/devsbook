@@ -10,21 +10,21 @@ use Dotenv\Dotenv;
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
-$route = new Router(Geral::url());
+$route = new Router(Geral::url(), "::");
 
 /**
  * WEB ROUTES
  */
-$route->namespace("Source/Controllers");
-$route->get("/", "Auth:login");
-$route->get("/registrar", "Auth:register");
+$route->namespace("Source\Controllers");
+$route->get("/", "Auth::login");
+$route->get("/cadastrar", "Auth::cadastrar");
 
 
 /**
  * ERROR ROUTES
  */
-$route->namespace("Source/Controllers")->group("/ops");
-$route->get("/{errcode}", "Auth:error");
+$route->namespace("Source\Controllers")->group("/ops");
+$route->get("/{errcode}", "Auth::error");
 
  /**
  * ROUTE
