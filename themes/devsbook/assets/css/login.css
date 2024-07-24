@@ -97,3 +97,6 @@ form a {
     margin: 0 auto;
     margin-top: 20px;
 }
+.main{
+    display: block!important;
+}

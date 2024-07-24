@@ -18,7 +18,10 @@ $route = new Router(Geral::url(), "::");
 $route->namespace("Source\Controllers");
 $route->get("/", "Auth::login");
 $route->get("/cadastrar", "Auth::cadastrar");
-
+$route->get("/index", "User::index");
+$route->get("/perfil", "User::perfil");
+$route->get("/fotos", "User::fotos");
+$route->get("/amigos", "User::amigos");
 
 /**
  * ERROR ROUTES
